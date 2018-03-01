@@ -44,7 +44,13 @@ class Citizen(Observer):
 
 if __name__ == '__name__':
 	newspaper = Newspaper('City', 1980)
-	newspaper.register(Citizen('Max', 20))
-	newspaper.register(Citizen('Igor', 20))
+	maksim = Citizen('Max', 20)
+	igor = Citizen('Igor', 20)
+	newspaper.register(maksim)
+	newspaper.register(igor)
 
 	newspaper.add_news('Good news came to our city ...')
+
+	newspaper.detach(igor)
+
+	newspaper.add_news('We lost the Igor!')
