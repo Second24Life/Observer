@@ -53,4 +53,4 @@ if __name__ == '__name__':
 
 	newspaper.detach(igor)
 
-	newspaper.add_news('We lost the Igor!')
+	newspaper.add_news('We lost the Igor')
